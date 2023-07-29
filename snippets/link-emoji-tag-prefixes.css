@@ -1,0 +1,1127 @@
+@charset "UTF-8";
+[data-link-tags*="#f/type/note/literature"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/note/literature"]:not([data-link-tags*="#f/status"])::before {
+  content: "📖";
+}
+
+[data-link-tags*="#f/type/term"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/term"]:not([data-link-tags*="#f/status"])::before {
+  content: "🔖";
+}
+
+[data-link-tags*="#f/type/quote"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/quote"]:not([data-link-tags*="#f/status"])::before {
+  content: "💬";
+}
+
+[data-link-tags*="#f/type/literature"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/literature"]:not([data-link-tags*="#f/status"])::before {
+  content: "📕";
+}
+
+[data-link-tags*="#f/type/question"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/question"]:not([data-link-tags*="#f/status"])::before {
+  content: "❔";
+}
+
+[data-link-tags*="#f/type/link"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/link"]:not([data-link-tags*="#f/status"])::before {
+  content: "🔗";
+}
+
+[data-link-tags*="#f/type/periodic-note"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/periodic-note"]:not([data-link-tags*="#f/status"])::before {
+  content: "🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/periodic-note/daily"]:not([data-link-tags*="#f/status"])::before {
+  content: "📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/periodic-note/person/private"]:not([data-link-tags*="#f/status"])::before {
+  content: "👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/periodic-note/person/public"]:not([data-link-tags*="#f/status"])::before {
+  content: "👥";
+}
+
+[data-link-tags*="#f/type/media/reading"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/media/reading"]:not([data-link-tags*="#f/status"])::before {
+  content: "📖";
+}
+
+[data-link-tags*="#f/type/note"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#f/type/note"]:not([data-link-tags*="#f/status"])::before {
+  content: "🗒️";
+}
+
+[data-link-tags*="#type/moc"]:not([data-link-status*="#f/status"])::before,
+[data-link-tags*="#type/moc"]:not([data-link-tags*="#f/status"])::before {
+  content: "🗺️";
+}
+
+[data-link-tags*="#f/status/seedling"]:not([data-link-type*="#f/type"])::before,
+[data-link-tags*="#f/status/seedling"]:not([data-link-tags*="#f/type"])::before {
+  content: "🌱";
+}
+
+[data-link-tags*="#f/status/sapling"]:not([data-link-type*="#f/type"])::before,
+[data-link-tags*="#f/status/sapling"]:not([data-link-tags*="#f/type"])::before {
+  content: "🪴";
+}
+
+[data-link-tags*="#f/status/evergreen"]:not([data-link-type*="#f/type"])::before,
+[data-link-tags*="#f/status/evergreen"]:not([data-link-tags*="#f/type"])::before {
+  content: "🌲";
+}
+
+[data-link-tags*="#f/status/literature"]:not([data-link-type*="#f/type"])::before,
+[data-link-tags*="#f/status/literature"]:not([data-link-tags*="#f/type"])::before {
+  content: "📕";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/note/literature"]::before,
+[data-link-tags*="#f/type/note/literature"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/note/literature"]::before,
+[data-link-type*="#f/type/note/literature"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/term"]::before,
+[data-link-tags*="#f/type/term"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/term"]::before,
+[data-link-type*="#f/type/term"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱🔖";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/quote"]::before,
+[data-link-tags*="#f/type/quote"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/quote"]::before,
+[data-link-type*="#f/type/quote"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱💬";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/literature"]::before,
+[data-link-tags*="#f/type/literature"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/literature"]::before,
+[data-link-type*="#f/type/literature"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱📕";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/question"]::before,
+[data-link-tags*="#f/type/question"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/question"]::before,
+[data-link-type*="#f/type/question"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱❔";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/link"]::before,
+[data-link-tags*="#f/type/link"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/link"]::before,
+[data-link-type*="#f/type/link"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱🔗";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/periodic-note"]::before,
+[data-link-tags*="#f/type/periodic-note"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note"]::before,
+[data-link-type*="#f/type/periodic-note"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱🗓️";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/periodic-note/daily"]::before,
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/daily"]::before,
+[data-link-type*="#f/type/periodic-note/daily"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱📅";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/periodic-note/person/private"]::before,
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/person/private"]::before,
+[data-link-type*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱👤";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/periodic-note/person/public"]::before,
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/person/public"]::before,
+[data-link-type*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱👥";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/media/reading"]::before,
+[data-link-tags*="#f/type/media/reading"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/media/reading"]::before,
+[data-link-type*="#f/type/media/reading"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#f/type/note"]::before,
+[data-link-tags*="#f/type/note"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/note"]::before,
+[data-link-type*="#f/type/note"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱🗒️";
+}
+
+[data-link-tags*="#f/status/seedling"][data-link-type*="#type/moc"]::before,
+[data-link-tags*="#type/moc"][data-link-status*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#type/moc"]::before,
+[data-link-type*="#type/moc"][data-link-status*="#f/status/seedling"]::before {
+  content: "🌱🗺️";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/note/literature"]::before,
+[data-link-tags*="#f/type/note/literature"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/note/literature"]::before,
+[data-link-type*="#f/type/note/literature"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/term"]::before,
+[data-link-tags*="#f/type/term"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/term"]::before,
+[data-link-type*="#f/type/term"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴🔖";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/quote"]::before,
+[data-link-tags*="#f/type/quote"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/quote"]::before,
+[data-link-type*="#f/type/quote"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴💬";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/literature"]::before,
+[data-link-tags*="#f/type/literature"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/literature"]::before,
+[data-link-type*="#f/type/literature"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴📕";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/question"]::before,
+[data-link-tags*="#f/type/question"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/question"]::before,
+[data-link-type*="#f/type/question"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴❔";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/link"]::before,
+[data-link-tags*="#f/type/link"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/link"]::before,
+[data-link-type*="#f/type/link"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴🔗";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/periodic-note"]::before,
+[data-link-tags*="#f/type/periodic-note"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note"]::before,
+[data-link-type*="#f/type/periodic-note"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴🗓️";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/periodic-note/daily"]::before,
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/daily"]::before,
+[data-link-type*="#f/type/periodic-note/daily"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴📅";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/periodic-note/person/private"]::before,
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/person/private"]::before,
+[data-link-type*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴👤";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/periodic-note/person/public"]::before,
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/person/public"]::before,
+[data-link-type*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴👥";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/media/reading"]::before,
+[data-link-tags*="#f/type/media/reading"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/media/reading"]::before,
+[data-link-type*="#f/type/media/reading"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#f/type/note"]::before,
+[data-link-tags*="#f/type/note"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/note"]::before,
+[data-link-type*="#f/type/note"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴🗒️";
+}
+
+[data-link-tags*="#f/status/sapling"][data-link-type*="#type/moc"]::before,
+[data-link-tags*="#type/moc"][data-link-status*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#type/moc"]::before,
+[data-link-type*="#type/moc"][data-link-status*="#f/status/sapling"]::before {
+  content: "🪴🗺️";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/note/literature"]::before,
+[data-link-tags*="#f/type/note/literature"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/note/literature"]::before,
+[data-link-type*="#f/type/note/literature"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/term"]::before,
+[data-link-tags*="#f/type/term"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/term"]::before,
+[data-link-type*="#f/type/term"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲🔖";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/quote"]::before,
+[data-link-tags*="#f/type/quote"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/quote"]::before,
+[data-link-type*="#f/type/quote"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲💬";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/literature"]::before,
+[data-link-tags*="#f/type/literature"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/literature"]::before,
+[data-link-type*="#f/type/literature"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲📕";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/question"]::before,
+[data-link-tags*="#f/type/question"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/question"]::before,
+[data-link-type*="#f/type/question"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲❔";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/link"]::before,
+[data-link-tags*="#f/type/link"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/link"]::before,
+[data-link-type*="#f/type/link"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲🔗";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/periodic-note"]::before,
+[data-link-tags*="#f/type/periodic-note"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note"]::before,
+[data-link-type*="#f/type/periodic-note"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲🗓️";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/periodic-note/daily"]::before,
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/daily"]::before,
+[data-link-type*="#f/type/periodic-note/daily"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲📅";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/periodic-note/person/private"]::before,
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/person/private"]::before,
+[data-link-type*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲👤";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/periodic-note/person/public"]::before,
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/person/public"]::before,
+[data-link-type*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲👥";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/media/reading"]::before,
+[data-link-tags*="#f/type/media/reading"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/media/reading"]::before,
+[data-link-type*="#f/type/media/reading"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#f/type/note"]::before,
+[data-link-tags*="#f/type/note"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/note"]::before,
+[data-link-type*="#f/type/note"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲🗒️";
+}
+
+[data-link-tags*="#f/status/evergreen"][data-link-type*="#type/moc"]::before,
+[data-link-tags*="#type/moc"][data-link-status*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#type/moc"]::before,
+[data-link-type*="#type/moc"][data-link-status*="#f/status/evergreen"]::before {
+  content: "🌲🗺️";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/note/literature"]::before,
+[data-link-tags*="#f/type/note/literature"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/note/literature"]::before,
+[data-link-type*="#f/type/note/literature"][data-link-status*="#f/status/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/term"]::before,
+[data-link-tags*="#f/type/term"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/term"]::before,
+[data-link-type*="#f/type/term"][data-link-status*="#f/status/literature"]::before {
+  content: "📕🔖";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/quote"]::before,
+[data-link-tags*="#f/type/quote"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/quote"]::before,
+[data-link-type*="#f/type/quote"][data-link-status*="#f/status/literature"]::before {
+  content: "📕💬";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/literature"]::before,
+[data-link-tags*="#f/type/literature"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/literature"]::before,
+[data-link-type*="#f/type/literature"][data-link-status*="#f/status/literature"]::before {
+  content: "📕📕";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/question"]::before,
+[data-link-tags*="#f/type/question"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/question"]::before,
+[data-link-type*="#f/type/question"][data-link-status*="#f/status/literature"]::before {
+  content: "📕❔";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/link"]::before,
+[data-link-tags*="#f/type/link"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/link"]::before,
+[data-link-type*="#f/type/link"][data-link-status*="#f/status/literature"]::before {
+  content: "📕🔗";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/periodic-note"]::before,
+[data-link-tags*="#f/type/periodic-note"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note"]::before,
+[data-link-type*="#f/type/periodic-note"][data-link-status*="#f/status/literature"]::before {
+  content: "📕🗓️";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/periodic-note/daily"]::before,
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/daily"]::before,
+[data-link-type*="#f/type/periodic-note/daily"][data-link-status*="#f/status/literature"]::before {
+  content: "📕📅";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/periodic-note/person/private"]::before,
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/person/private"]::before,
+[data-link-type*="#f/type/periodic-note/person/private"][data-link-status*="#f/status/literature"]::before {
+  content: "📕👤";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/periodic-note/person/public"]::before,
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/person/public"]::before,
+[data-link-type*="#f/type/periodic-note/person/public"][data-link-status*="#f/status/literature"]::before {
+  content: "📕👥";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/media/reading"]::before,
+[data-link-tags*="#f/type/media/reading"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/media/reading"]::before,
+[data-link-type*="#f/type/media/reading"][data-link-status*="#f/status/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#f/type/note"]::before,
+[data-link-tags*="#f/type/note"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/note"]::before,
+[data-link-type*="#f/type/note"][data-link-status*="#f/status/literature"]::before {
+  content: "📕🗒️";
+}
+
+[data-link-tags*="#f/status/literature"][data-link-type*="#type/moc"]::before,
+[data-link-tags*="#type/moc"][data-link-status*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#type/moc"]::before,
+[data-link-type*="#type/moc"][data-link-status*="#f/status/literature"]::before {
+  content: "📕🗺️";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/type/note/literature"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱🔖";
+}
+
+[data-link-tags*="#f/type/term"]::before {
+  content: "🌱🔖";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱💬";
+}
+
+[data-link-tags*="#f/type/quote"]::before {
+  content: "🌱💬";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱📕";
+}
+
+[data-link-tags*="#f/type/literature"]::before {
+  content: "🌱📕";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱❔";
+}
+
+[data-link-tags*="#f/type/question"]::before {
+  content: "🌱❔";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱🔗";
+}
+
+[data-link-tags*="#f/type/link"]::before {
+  content: "🌱🔗";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🌱🗓️";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🌱📅";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🌱👤";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱👥";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🌱👥";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/type/media/reading"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱🗒️";
+}
+
+[data-link-tags*="#f/type/note"]::before {
+  content: "🌱🗒️";
+}
+
+[data-link-tags*="#f/status/seedling"]::before {
+  content: "🌱🗺️";
+}
+
+[data-link-tags*="#type/moc"]::before {
+  content: "🌱🗺️";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/type/note/literature"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴🔖";
+}
+
+[data-link-tags*="#f/type/term"]::before {
+  content: "🪴🔖";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴💬";
+}
+
+[data-link-tags*="#f/type/quote"]::before {
+  content: "🪴💬";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴📕";
+}
+
+[data-link-tags*="#f/type/literature"]::before {
+  content: "🪴📕";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴❔";
+}
+
+[data-link-tags*="#f/type/question"]::before {
+  content: "🪴❔";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴🔗";
+}
+
+[data-link-tags*="#f/type/link"]::before {
+  content: "🪴🔗";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🪴🗓️";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🪴📅";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🪴👤";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴👥";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🪴👥";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/type/media/reading"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴🗒️";
+}
+
+[data-link-tags*="#f/type/note"]::before {
+  content: "🪴🗒️";
+}
+
+[data-link-tags*="#f/status/sapling"]::before {
+  content: "🪴🗺️";
+}
+
+[data-link-tags*="#type/moc"]::before {
+  content: "🪴🗺️";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/type/note/literature"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲🔖";
+}
+
+[data-link-tags*="#f/type/term"]::before {
+  content: "🌲🔖";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲💬";
+}
+
+[data-link-tags*="#f/type/quote"]::before {
+  content: "🌲💬";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲📕";
+}
+
+[data-link-tags*="#f/type/literature"]::before {
+  content: "🌲📕";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲❔";
+}
+
+[data-link-tags*="#f/type/question"]::before {
+  content: "🌲❔";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲🔗";
+}
+
+[data-link-tags*="#f/type/link"]::before {
+  content: "🌲🔗";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🌲🗓️";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🌲📅";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🌲👤";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲👥";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🌲👥";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/type/media/reading"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲🗒️";
+}
+
+[data-link-tags*="#f/type/note"]::before {
+  content: "🌲🗒️";
+}
+
+[data-link-tags*="#f/status/evergreen"]::before {
+  content: "🌲🗺️";
+}
+
+[data-link-tags*="#type/moc"]::before {
+  content: "🌲🗺️";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/type/note/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕🔖";
+}
+
+[data-link-tags*="#f/type/term"]::before {
+  content: "📕🔖";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕💬";
+}
+
+[data-link-tags*="#f/type/quote"]::before {
+  content: "📕💬";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕📕";
+}
+
+[data-link-tags*="#f/type/literature"]::before {
+  content: "📕📕";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕❔";
+}
+
+[data-link-tags*="#f/type/question"]::before {
+  content: "📕❔";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕🔗";
+}
+
+[data-link-tags*="#f/type/link"]::before {
+  content: "📕🔗";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note"]::before {
+  content: "📕🗓️";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "📕📅";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "📕👤";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕👥";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "📕👥";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/type/media/reading"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕🗒️";
+}
+
+[data-link-tags*="#f/type/note"]::before {
+  content: "📕🗒️";
+}
+
+[data-link-tags*="#f/status/literature"]::before {
+  content: "📕🗺️";
+}
+
+[data-link-tags*="#type/moc"]::before {
+  content: "📕🗺️";
+}
+
+[data-link-tags*="#f/type/note/literature"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/note/literature"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/type/term"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/term"]::before {
+  content: "🌱🔖";
+}
+
+[data-link-tags*="#f/type/quote"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/quote"]::before {
+  content: "🌱💬";
+}
+
+[data-link-tags*="#f/type/literature"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/literature"]::before {
+  content: "🌱📕";
+}
+
+[data-link-tags*="#f/type/question"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/question"]::before {
+  content: "🌱❔";
+}
+
+[data-link-tags*="#f/type/link"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/link"]::before {
+  content: "🌱🔗";
+}
+
+[data-link-tags*="#f/type/periodic-note"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🌱🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🌱📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🌱👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🌱👥";
+}
+
+[data-link-tags*="#f/type/media/reading"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/media/reading"]::before {
+  content: "🌱📖";
+}
+
+[data-link-tags*="#f/type/note"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#f/type/note"]::before {
+  content: "🌱🗒️";
+}
+
+[data-link-tags*="#type/moc"][data-link-tags*="#f/status/seedling"]::before,
+[data-link-tags*="#f/status/seedling"][data-link-tags*="#type/moc"]::before {
+  content: "🌱🗺️";
+}
+
+[data-link-tags*="#f/type/note/literature"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/note/literature"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/type/term"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/term"]::before {
+  content: "🪴🔖";
+}
+
+[data-link-tags*="#f/type/quote"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/quote"]::before {
+  content: "🪴💬";
+}
+
+[data-link-tags*="#f/type/literature"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/literature"]::before {
+  content: "🪴📕";
+}
+
+[data-link-tags*="#f/type/question"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/question"]::before {
+  content: "🪴❔";
+}
+
+[data-link-tags*="#f/type/link"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/link"]::before {
+  content: "🪴🔗";
+}
+
+[data-link-tags*="#f/type/periodic-note"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🪴🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🪴📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🪴👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🪴👥";
+}
+
+[data-link-tags*="#f/type/media/reading"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/media/reading"]::before {
+  content: "🪴📖";
+}
+
+[data-link-tags*="#f/type/note"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#f/type/note"]::before {
+  content: "🪴🗒️";
+}
+
+[data-link-tags*="#type/moc"][data-link-tags*="#f/status/sapling"]::before,
+[data-link-tags*="#f/status/sapling"][data-link-tags*="#type/moc"]::before {
+  content: "🪴🗺️";
+}
+
+[data-link-tags*="#f/type/note/literature"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/note/literature"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/type/term"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/term"]::before {
+  content: "🌲🔖";
+}
+
+[data-link-tags*="#f/type/quote"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/quote"]::before {
+  content: "🌲💬";
+}
+
+[data-link-tags*="#f/type/literature"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/literature"]::before {
+  content: "🌲📕";
+}
+
+[data-link-tags*="#f/type/question"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/question"]::before {
+  content: "🌲❔";
+}
+
+[data-link-tags*="#f/type/link"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/link"]::before {
+  content: "🌲🔗";
+}
+
+[data-link-tags*="#f/type/periodic-note"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note"]::before {
+  content: "🌲🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "🌲📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "🌲👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "🌲👥";
+}
+
+[data-link-tags*="#f/type/media/reading"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/media/reading"]::before {
+  content: "🌲📖";
+}
+
+[data-link-tags*="#f/type/note"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#f/type/note"]::before {
+  content: "🌲🗒️";
+}
+
+[data-link-tags*="#type/moc"][data-link-tags*="#f/status/evergreen"]::before,
+[data-link-tags*="#f/status/evergreen"][data-link-tags*="#type/moc"]::before {
+  content: "🌲🗺️";
+}
+
+[data-link-tags*="#f/type/note/literature"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/note/literature"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/type/term"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/term"]::before {
+  content: "📕🔖";
+}
+
+[data-link-tags*="#f/type/quote"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/quote"]::before {
+  content: "📕💬";
+}
+
+[data-link-tags*="#f/type/literature"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/literature"]::before {
+  content: "📕📕";
+}
+
+[data-link-tags*="#f/type/question"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/question"]::before {
+  content: "📕❔";
+}
+
+[data-link-tags*="#f/type/link"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/link"]::before {
+  content: "📕🔗";
+}
+
+[data-link-tags*="#f/type/periodic-note"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note"]::before {
+  content: "📕🗓️";
+}
+
+[data-link-tags*="#f/type/periodic-note/daily"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/daily"]::before {
+  content: "📕📅";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/private"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/person/private"]::before {
+  content: "📕👤";
+}
+
+[data-link-tags*="#f/type/periodic-note/person/public"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/periodic-note/person/public"]::before {
+  content: "📕👥";
+}
+
+[data-link-tags*="#f/type/media/reading"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/media/reading"]::before {
+  content: "📕📖";
+}
+
+[data-link-tags*="#f/type/note"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#f/type/note"]::before {
+  content: "📕🗒️";
+}
+
+[data-link-tags*="#type/moc"][data-link-tags*="#f/status/literature"]::before,
+[data-link-tags*="#f/status/literature"][data-link-tags*="#type/moc"]::before {
+  content: "📕🗺️";
+}
+
+/*# sourceMappingURL=link-emoji-tag-prefixes.css.map */

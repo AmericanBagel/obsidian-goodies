@@ -1,0 +1,67 @@
+/* @settings
+
+name: AnaPpuccin custom folder colors
+id: anp-custom-folder-colors
+settings:
+    -
+        id: custom-folder-colors
+        title: Custom folder colors
+        type: class-toggle
+    -
+        id: hide-first-level-folder-collapse-icon
+        title: Hide first level folder collapse icons
+        description: Hides folder collapse arrow icons for folders in the uppermost vault folder
+        type: class-toggle
+*/
+/*
+    --ctp-ext-rosewater: 243, 128, 25;
+    --ctp-ext-flamingo: 207, 162, 174;
+    --ctp-ext-pink: 177, 98, 118;
+    --ctp-ext-mauve: 177, 98, 134;
+    --ctp-ext-red: 204, 36, 29;
+    --ctp-ext-maroon: 204, 49, 29;
+    --ctp-ext-peach: 214, 93, 14;
+    --ctp-ext-yellow: 215, 153, 33;
+    --ctp-ext-green: 152, 151, 26;
+    --ctp-ext-teal: 102, 152, 26;
+    --ctp-ext-sky: 26, 152, 76;
+    --ctp-ext-sapphire: 26, 133, 152;
+    --ctp-ext-blue: 69, 133, 136;
+    --ctp-ext-lavender: 146, 111, 175;
+    --ctp-ext-text: 251, 241, 199;
+    --ctp-ext-subtext1: 213, 196, 161;
+    --ctp-ext-subtext0: 189, 174, 147;
+    --ctp-ext-overlay2: 151, 137, 125;
+    --ctp-ext-overlay1: 124, 111, 100;
+    --ctp-ext-overlay0: 102, 92, 84;
+    --ctp-ext-surface2: 80, 73, 69;
+    --ctp-ext-surface1: 60, 56, 54;
+    --ctp-ext-surface0: 50, 48, 47;
+    --ctp-ext-base: 40, 40, 40;
+    --ctp-ext-mantle: 29, 32, 33;
+    --ctp-ext-crust: 19, 21, 22;
+*/
+
+@mixin custom-folder-colors($path, $color) {
+    body.custom-folder-colors {
+        .nav-folder:has([data-path="#{$path}"]) {
+            --rainbow-folder-color: #{$color} !important;
+        }
+        .nav-folder-title-content {
+            text-decoration-color: var(--rainbow-folder-color) !important;
+        }
+    }
+}
+
+@include custom-folder-colors('00 Technical', var(--ctp-overlay1));
+@include custom-folder-colors('10 Headquarters', var(--ctp-text));
+@include custom-folder-colors('20 Journal', var(--ctp-rosewater));
+@include custom-folder-colors('30 Spaces', var(--ctp-sky));
+@include custom-folder-colors('40 Databases', var(--ctp-blue));
+@include custom-folder-colors('50 Forest/0 Atlas', var(--ctp-yellow));
+@include custom-folder-colors('50 Forest/1 Seedlings', var(--ctp-green));
+@include custom-folder-colors('50 Forest/2 Evergreen', var(--ctp-teal));
+@include custom-folder-colors('50 Forest/3 Literature', var(--ctp-sky));
+@include custom-folder-colors('50 Forest', var(--ctp-green));
+@include custom-folder-colors('60 TTRPG', var(--ctp-maroon));
+@include custom-folder-colors('70 Stories', var(--ctp-lavender));

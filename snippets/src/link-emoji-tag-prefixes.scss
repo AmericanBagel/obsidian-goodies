@@ -1,0 +1,86 @@
+// IMPORTANT: Add your statuses/primary tags here
+$statusEmojiMap: (
+	'#f/status/seedling': '🌱',
+	'#f/status/sapling': '🪴',
+	'#f/status/evergreen': '🌲',
+	'#f/status/literature': '📕',
+);
+
+// IMPORTANT: Add your types/secondary tags here
+$typeEmojiMap: (
+	'#f/type/note/literature': '📖',
+	'#f/type/term': '🔖',
+	'#f/type/quote': '💬',
+	'#f/type/literature': '📕',
+	'#f/type/question': '❔',
+	'#f/type/link': '🔗',
+	'#f/type/periodic-note': '🗓️',
+	'#f/type/periodic-note/daily': '📅',
+	'#f/type/periodic-note/person/private': '👤',
+	'#f/type/periodic-note/person/public': '👥',
+	'#f/type/media/reading': '📖',
+	'#f/type/note': '🗒️',
+	'#type/moc': '🗺️'
+);
+
+// Priority 5: Type alone
+@each $typeTag, $typeEmoji in $typeEmojiMap {
+	[data-link-tags*='#{$typeTag}']:not([data-link-status*='#f/status']),
+	[data-link-tags*='#{$typeTag}']:not([data-link-tags*='#f/status']) {
+		&::before {
+			content: '#{$typeEmoji}';
+		}
+	}
+}
+
+// Priority 4: Status alone
+@each $statusTag, $statusEmoji in $statusEmojiMap {
+	[data-link-tags*='#{$statusTag}']:not([data-link-type*='#f/type']),
+	[data-link-tags*='#{$statusTag}']:not([data-link-tags*='#f/type']) {
+		&::before {
+			content: '#{$statusEmoji}';
+		}
+	}
+}
+
+// Priority 3: Both tags, type and status individually
+@each $statusTag, $statusEmoji in $statusEmojiMap {
+	@each $typeTag, $typeEmoji in $typeEmojiMap {
+		[data-link-tags*='#{$statusTag}'][data-link-type*='#{$typeTag}'],
+		[data-link-tags*='#{$typeTag}'][data-link-status*='#{$statusTag}'],
+		[data-link-tags*='#{$statusTag}'][data-link-tags*='#{$typeTag}'],
+		[data-link-type*='#{$typeTag}'][data-link-status*='#{$statusTag}'] {
+			&::before {
+				content: '#{$statusEmoji}#{$typeEmoji}';
+			}
+		}
+	}
+}
+
+// Priority 2: Both tags, type alone, or status alone
+@each $statusTag, $statusEmoji in $statusEmojiMap {
+	@each $typeTag, $typeEmoji in $typeEmojiMap {
+		[data-link-tags*='#{$statusTag}'] {
+			&::before {
+				content: '#{$statusEmoji}#{$typeEmoji}';
+			}
+		}
+		[data-link-tags*='#{$typeTag}'] {
+			&::before {
+				content: '#{$statusEmoji}#{$typeEmoji}';
+			}
+		}
+	}
+}
+
+// Priority 1: Both tags, type and status
+@each $statusTag, $statusEmoji in $statusEmojiMap {
+	@each $typeTag, $typeEmoji in $typeEmojiMap {
+		[data-link-tags*='#{$typeTag}'][data-link-tags*='#{$statusTag}'],
+		[data-link-tags*='#{$statusTag}'][data-link-tags*='#{$typeTag}'] {
+			&::before {
+				content: '#{$statusEmoji}#{$typeEmoji}';
+			}
+		}
+	}
+}
