@@ -1,5 +1,5 @@
-# obsidian-quickadd-macros
-A collection of my QuickAdd macros for Obsidian
+# obsidian-goodies
+A collection of my Obsidian goodies, including QuickAdd macros and snippets
 
 > :rotating_light: I am not responsible if any of these damage your vault. I made these for myself and only tested them in my personal vault on my personal computer.
 > If you have *any* files you care about, you should *already* be using some form of version control or automated backups.
